@@ -7,6 +7,7 @@ import { CoreModule } from './core/core.module';
 import { registerLocaleData } from '@angular/common';
 import localeBn from '@angular/common/locales/bn';
 import localeBnExtra from '@angular/common/locales/extra/bn';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 registerLocaleData(localeBn, 'bn', localeBnExtra);
 @NgModule({
@@ -16,9 +17,10 @@ registerLocaleData(localeBn, 'bn', localeBnExtra);
   imports: [
     BrowserModule.withServerTransition({ appId: 'angular-ssr' }),
     CoreModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,11 +1,213 @@
-<mat-toolbar color="primary" class="menu">
-  <h3 i18n="@@home-h3" class="bangla">Angular Universal App with i18n</h3>
-  <button mat-button [matMenuTriggerFor]="menu" i18n="@@home-button" class="bangla">Language</button>
-</mat-toolbar>
-<mat-menu #menu="matMenu">
-  <a mat-menu-item [href]="resolveHref()">English</a>
-  <a mat-menu-item class="bangla" [href]="resolveHref()">বাংলা</a>
-</mat-menu>
-<div class="home">
-  <h1 i18n="@@home-msg" class="bangla">Welcome to Angular Server Side Rendered App with i18n</h1>
+<div class="main-container">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm">
+              <h2>SpaceX Launch Program</h2>
+          </div>
+      </div>
+  </div>
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-12 col-md-3 filters-wrap" >
+              <div class="card">
+                  <div class="card-body">
+                      <h6><strong>Filters</strong></h6>
+                      <p class="filter-heading">Launch Year</p>
+                      <ul class="filters">
+                          <li class="active">
+                              <label>
+                                  <input type="checkbox" class="filters-check" value="2006"> 2006
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="checkbox" class="filters-check" value="2007"> 2007
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="checkbox" class="filters-check" value="2008"> 2008
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="checkbox" class="filters-check" value="2009"> 2009
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="checkbox" class="filters-check" value="2010"> 2010
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="checkbox" class="filters-check" value="2011"> 2012
+                              </label>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="card-body">
+                      <p class="filter-heading">Successful Launch</p>
+                      <ul class="filters">
+                          <li class="active">
+                              <label>
+                                  <input type="radio" name="Successful_Launch" class="filters-check" value="true">
+                                  True
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="radio" name="Successful_Launch" class="filters-check"
+                                      value="false"> False
+                              </label>
+                          </li>
+
+                      </ul>
+                  </div>
+                  <div class="card-body">
+                      <p class="filter-heading">Successful Landing</p>
+                      <ul class="filters">
+                          <li class="active">
+                              <label>
+                                  <input type="radio" name="Successful_Landing" class="filters-check"
+                                      value="true"> True
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="radio" name="Successful_Landing" class="filters-check"
+                                      value="false"> False
+                              </label>
+                          </li>
+
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-9 launch-cards">
+              <div class="row">
+                  <div class="col-md-6 col-lg-3 col-sm-12">
+                      <div class="card" style="width: 18rem;">
+                          <div class="card-image">
+
+                              <img src="./images/1.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body">
+                              <h6 class="card-title"><strong><a href="#">FalconSat #1</a></strong></h6>
+                              <p class="card-text"><strong>Mission Ids:</strong> <a href="#">{List mission
+                                      ids}</a></p>
+                              <p class="card-text"><strong>Launch Year:</strong> <a href="#">{Launch Year}</a></p>
+                              <p class="card-text"><strong>Successful Launch:</strong> <a href="#">{Successful
+                                      Launch}</a></p>
+                              <p class="card-text"><strong>Successful Landing:</strong> <a href="#">{Successful
+                                      Landing}</a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 col-sm-12">
+                      <div class="card" style="width: 18rem;">
+                          <div class="card-image">
+
+                              <img src="./images/1.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body">
+                              <h6 class="card-title"><strong><a href="#">FalconSat #1</a></strong></h6>
+                              <p class="card-text"><strong>Mission Ids:</strong> <a href="#">{List mission
+                                      ids}</a></p>
+                              <p class="card-text"><strong>Launch Year:</strong> <a href="#">{Launch Year}</a></p>
+                              <p class="card-text"><strong>Successful Launch:</strong> <a href="#">{Successful
+                                      Launch}</a></p>
+                              <p class="card-text"><strong>Successful Landing:</strong> <a href="#">{Successful
+                                      Landing}</a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 col-sm-12">
+                      <div class="card" style="width: 18rem;">
+                          <div class="card-image">
+
+                              <img src="./images/1.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body">
+                              <h6 class="card-title"><strong><a href="#">FalconSat #1</a></strong></h6>
+                              <p class="card-text"><strong>Mission Ids:</strong> <a href="#">{List mission
+                                      ids}</a></p>
+                              <p class="card-text"><strong>Launch Year:</strong> <a href="#">{Launch Year}</a></p>
+                              <p class="card-text"><strong>Successful Launch:</strong> <a href="#">{Successful
+                                      Launch}</a></p>
+                              <p class="card-text"><strong>Successful Landing:</strong> <a href="#">{Successful
+                                      Landing}</a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 col-sm-12">
+                      <div class="card" style="width: 18rem;">
+                          <div class="card-image">
+
+                              <img src="./images/1.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body">
+                              <h6 class="card-title"><strong><a href="#">FalconSat #1</a></strong></h6>
+                              <p class="card-text"><strong>Mission Ids:</strong> <a href="#">{List mission
+                                      ids}</a></p>
+                              <p class="card-text"><strong>Launch Year:</strong> <a href="#">{Launch Year}</a></p>
+                              <p class="card-text"><strong>Successful Launch:</strong> <a href="#">{Successful
+                                      Launch}</a></p>
+                              <p class="card-text"><strong>Successful Landing:</strong> <a href="#">{Successful
+                                      Landing}</a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 col-sm-12">
+                      <div class="card" style="width: 18rem;">
+                          <div class="card-image">
+
+                              <img src="./images/1.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body">
+                              <h6 class="card-title"><strong><a href="#">FalconSat #1</a></strong></h6>
+                              <p class="card-text"><strong>Mission Ids:</strong> <a href="#">{List mission
+                                      ids}</a></p>
+                              <p class="card-text"><strong>Launch Year:</strong> <a href="#">{Launch Year}</a></p>
+                              <p class="card-text"><strong>Successful Launch:</strong> <a href="#">{Successful
+                                      Launch}</a></p>
+                              <p class="card-text"><strong>Successful Landing:</strong> <a href="#">{Successful
+                                      Landing}</a></p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 col-sm-12">
+                      <div class="card" style="width: 18rem;">
+                          <div class="card-image">
+
+                              <img src="./images/1.png" class="card-img-top" alt="...">
+                          </div>
+                          <div class="card-body">
+                              <h6 class="card-title"><strong><a href="#">FalconSat #1</a></strong></h6>
+                              <p class="card-text"><strong>Mission Ids:</strong> <a href="#">{List mission
+                                      ids}</a></p>
+                              <p class="card-text"><strong>Launch Year:</strong> <a href="#">{Launch Year}</a></p>
+                              <p class="card-text"><strong>Successful Launch:</strong> <a href="#">{Successful
+                                      Launch}</a></p>
+                              <p class="card-text"><strong>Successful Landing:</strong> <a href="#">{Successful
+                                      Landing}</a></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+  </div>
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm">
+              <h4 class="text-center"><strong>Developed By: </strong> {Developed By}</h4>
+          </div>
+      </div>
+  </div>
 </div>

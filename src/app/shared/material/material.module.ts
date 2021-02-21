@@ -132,4 +132,5 @@ import {CdkTableModule} from '@angular/cdk/table';
     MatNativeDateModule
   ]
 })
+
 export class MaterialModule { }
