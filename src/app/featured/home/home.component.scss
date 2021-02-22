@@ -1,0 +1,34 @@
+.home{
+    background: #e0e0e0;;
+}
+.menu{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        font-size: 1em;
+    }
+}
+.gridContainer{
+    max-width: 1440px;
+    margin: 0 auto;    
+    background: #eeeef0;
+    padding: 1em 1em;
+}
+.borderFilterLabels{
+    border-bottom: 1px solid #acacac;
+    text-align: center;
+    margin: 0.5em 2em;
+}
+.boldFont{
+    font-weight: bold;
+}
+.row{
+    width: 50%;
+    display: inline-table;
+    text-align: center;
+}
+.launchFilter{
+width: 100%;
+text-align: center;
+}
